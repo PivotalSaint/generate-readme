@@ -42,14 +42,14 @@ const generateAbout = aboutText => {
     const { projects, about, ...header } = templateData;
   
     return `
-        ${header.name}
+        # ${header.name}
             https://github.com/${
               header.github
             }
-        ${generateAbout(about)}
-        ${generateProjects(projects)}
+        ## ${generateAbout(about)}
+        ## ${generateProjects(projects)}
 
-        ${new Date().getFullYear()} by ${header.name}
+        ### ${new Date().getFullYear()} by ${header.name}
     `;
   };
   

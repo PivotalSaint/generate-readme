@@ -1,20 +1,20 @@
 
-        Pivotal Saint
+        # Pivotal Saint 
             https://github.com/PivotalSaint
-        
-        I am learning to code
+        ## 
+        I am learning to code. licensedMT@att.net
     
+        ## 
         
-        
-                generate-readme
+                Generate Read Me
                 JavaScript,ES6,Node
                 MIT
-              This projects generates a read me from capturing user input through the command line and forming a generated read me file.
+              This generates a read me file using the command line interphase with node.js
               https://github.com/PivotalSaint/generate-readme
           
   
         
     
 
-        2022 by Pivotal Saint
+        ### 2022 by Pivotal Saint 
     

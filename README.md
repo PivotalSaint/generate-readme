@@ -29,3 +29,15 @@
     THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
     WHEN I click on the links in the Table of Contents
     THEN I am taken to the corresponding section of the README
+
+## Screenshot
+
+![img](/assets/screenshot/gen-readme-screenshot.png)
+
+**"Screenshot of Generated Read Me"**
+
+## ***Deployed Links***
+
+***(https://github.com/PivotalSaint/generate-readme)***
+
+    There is not going to be a live index due to everything being done in the command line.
