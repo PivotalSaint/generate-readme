@@ -1,56 +1,20 @@
-// create the about section
-const generateAbout = aboutText => {
-    if (!aboutText) {
-      return '';
-    }
-    return `
-        ${aboutText}
-    `;
-  };
-  
-  // create the projects section
-  const generateProjects = projectsArr => {
-    return `
-        ${projectsArr
-          .filter(({ feature }) => feature)
-          .map(({ name, description, languages, link }) => {
-            return `
-                ${name}
-                ${languages.map(language => language).join(',')}
-              ${description}
-              ${link}
-          `;
-          })
-          .join('')}
-  
-        ${projectsArr
-          .filter(({ feature }) => !feature)
-          .map(({ name, description, languages, link }) => {
-            return `
-            ${name}
-                ${languages.join(', ')}
-              ${description}
-              <a href="${link}">
-          `;
-          })
-          .join('')}
-    `;
-  };
-  
-  // export function to generate entire page
-  module.exports = templateData => {
-    // destructure page data by section
-    const { projects, about, ...header } = templateData;
-  
-    return `
-        ${header.name}
-            https://github.com/${
-              header.github
-            }
-        ${generateAbout(about)}
-        ${generateProjects(projects)}
 
-        ${new Date().getFullYear()} by ${header.name}</h3>
-    `;
-  };
+        Pivotal Saint
+            https://github.com/PivotalSaint
+        
+        I am learning to code
+    
+        
+        
+                generate-readme
+                JavaScript,ES6,Node
+                MIT
+              This projects generates a read me from capturing user input through the command line and forming a generated read me file.
+              https://github.com/PivotalSaint/generate-readme
+          
   
+        
+    
+
+        2022 by Pivotal Saint
+    

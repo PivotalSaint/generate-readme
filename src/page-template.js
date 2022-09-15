@@ -1,4 +1,3 @@
-// create the about section
 const generateAbout = aboutText => {
     if (!aboutText) {
       return '';
@@ -8,15 +7,15 @@ const generateAbout = aboutText => {
     `;
   };
   
-  // create the projects section
   const generateProjects = projectsArr => {
     return `
         ${projectsArr
           .filter(({ feature }) => feature)
-          .map(({ name, description, languages, link }) => {
+          .map(({ name, description, languages, license, link }) => {
             return `
                 ${name}
                 ${languages.map(language => language).join(',')}
+                ${license}
               ${description}
               ${link}
           `;
@@ -25,10 +24,11 @@ const generateAbout = aboutText => {
   
         ${projectsArr
           .filter(({ feature }) => !feature)
-          .map(({ name, description, languages, link }) => {
+          .map(({ name, description, languages, license, link }) => {
             return `
             ${name}
                 ${languages.join(', ')}
+                ${license}
               ${description}
               <a href="${link}">
           `;
@@ -37,9 +37,8 @@ const generateAbout = aboutText => {
     `;
   };
   
-  // export function to generate entire page
   module.exports = templateData => {
-    // destructure page data by section
+
     const { projects, about, ...header } = templateData;
   
     return `
@@ -50,7 +49,7 @@ const generateAbout = aboutText => {
         ${generateAbout(about)}
         ${generateProjects(projects)}
 
-        ${new Date().getFullYear()} by ${header.name}</h3>
+        ${new Date().getFullYear()} by ${header.name}
     `;
   };
   
