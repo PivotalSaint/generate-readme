@@ -38,6 +38,11 @@
 
 ## ***Deployed Links***
 
+### Screencastify
+***(https://drive.google.com/file/d/10mBVNBYu6ImHKruweEduoOuU8YNbrUVw/view)***
+
+### Github
 ***(https://github.com/PivotalSaint/generate-readme)***
 
     There is not going to be a live index due to everything being done in the command line.
+
